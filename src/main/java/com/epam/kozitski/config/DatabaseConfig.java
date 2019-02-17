@@ -39,7 +39,7 @@ public class DatabaseConfig {
         return ds;
     }
 
-    @Bean
+    @Bean()
     public JdbcTemplate getJdbcTemplate(){
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
         jdbcTemplate.setDataSource(dataSource());
